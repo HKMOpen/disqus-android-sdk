@@ -167,9 +167,7 @@ public class AuthManager {
                     }
                 } else { // token refresh failed. logout.
                     logout();
-                    for (AuthenticationListener listener : listeners) {
-                        listener.onLogout();
-                    }
+
                 }
             }
         }
@@ -182,9 +180,7 @@ public class AuthManager {
                 }
             } else { // token refresh failed. logout.
                 logout();
-                for (AuthenticationListener listener : listeners) {
-                    listener.onLogout();
-                }
+
             }
         }
     }

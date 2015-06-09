@@ -14,7 +14,7 @@ public class RequestInterceptor implements retrofit.RequestInterceptor {
 
     @Override
     public void intercept(RequestFacade request) {
-        request.addQueryParam(PARAM_API_KEY, DisqusSdkProvider.publicKey);
+        // request.addQueryParam(PARAM_API_KEY, DisqusSdkProvider.publicKey);
 
         // add the authenticated user to the request if available
         if (accessToken != null) {
